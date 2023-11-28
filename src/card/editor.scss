@@ -1,0 +1,18 @@
+.wp-block-create-block-kyg-card-block {
+	.card-overview {
+		width: 100%;
+
+		small {
+			color: var(--sl-color-neutral-500);
+		}
+
+		img {
+			width: 100%;
+		}
+
+		[slot="footer"] {
+			display: flex;
+			align-items: center;
+		}
+	}
+}

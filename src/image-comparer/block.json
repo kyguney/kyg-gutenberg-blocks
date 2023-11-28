@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/kyg-image-comparer",
+	"version": "0.1.0",
+	"title": "Image Comparer Block",
+	"category": "customBlocks",
+	"description": "Example block scaffolded with Create Block tool.",
+	"attributes": {
+		"mediaLeftId": {
+			"type": "number",
+			"default": 0
+		},
+		"mediaLeftUrl": {
+			"type": "string",
+			"default": "https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80&sat=-100&bri=-5"
+		},
+		"mediaRightId": {
+			"type": "number",
+			"default": 0
+		},
+		"mediaRightUrl": {
+			"type": "string",
+			"default": "https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+		},
+		"initialPosition": {
+			"type": "number",
+			"default": 50
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "kyg-gutenberg-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

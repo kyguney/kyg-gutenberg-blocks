@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/kyg-card-block",
+  "version": "0.1.0",
+  "title": "Card Block",
+  "category": "customBlocks",
+  "description": "Shoelace design Card block",
+  "attributes": {
+    "headerVisibility": {
+      "type": "boolean",
+      "default": true
+    },
+    "mediaId": {
+      "type": "number",
+      "default": 0
+    },
+    "mediaUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "headerContent": {
+      "type": "string",
+      "selector": ".card-header",
+      "source": "html",
+      "default": ""
+    },
+    "content": {
+      "type": "string",
+      "selector": ".card-content",
+      "source": "html",
+      "default": ""
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "More Info"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "newTabField": {
+      "type": "boolean",
+      "default": false
+    },
+    "buttonPosition": {
+      "type": "string",
+      "default": "right"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "kyg-gutenberg-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
